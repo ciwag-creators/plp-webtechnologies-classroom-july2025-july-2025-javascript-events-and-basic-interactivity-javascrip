@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SCIENCE</h1>
+            <p>There is nothing in this world that does not have science in it</p>
+        </header>
+        
+        <!-- Theme Toggle Section -->
+        <div class="theme-toggle">
+            <button class="toggle-btn" id="themeToggle">Dark Mode</button>
+        </div>
+        
+        <!-- FAQ Section -->
+        <section id="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is Biology</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p> biology is the branch of science that studies of life</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are the branches of biology</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>there are two main branches of biology br 
+                        <li> Zoology: the study of animals</li>
+                        <li> Botany: the study of animal</li>
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are other branches of biology</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>other branches of biology are physiology, anatomy, microbiology etc.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Dropdown Menu Section -->
+        <section>
+            <h2>Dropdown Menu</h2>
+            <div class="dropdown">
+                <button class="dropdown-toggle">Select Options</button>
+                <div class="dropdown-menu">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                    <a href="#">Option 4</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Interactive Demo Section -->
+        <section>
+            <h2>what is scientic method</h2>
+            <p>there are steps use in identification and classification</p>
+            <div class="interactive-box" id="interactiveBox">
+                Click Me!
+            </div>
+            <div class="keypress-display" id="keypressDisplay">
+                Press any key to see it here
+            </div>
+        </section>
+        
+        <!-- Form Validation Section -->
+        <section>
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error-message" id="nameError">Please enter a valid name (letters and spaces only)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error-message" id="passwordError">Password must be at least 8 characters with one uppercase, one lowercase, one number, and one special character</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number</div>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+                <div class="success-message" id="successMessage">Form submitted successfully!</div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
